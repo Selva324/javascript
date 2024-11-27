@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+}
+.navbar{
+    background-color: turquoise;
+    padding: 10px;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 15px;
+    width: 25%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.book-container h2{
+    color: turquoise;
+}
+.btn{
+    background-color: turquoise;
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.add-btn{
+    background-color: turquoise;
+    color: black;
+    border-radius: 100%;
+    padding: 10px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+.overlay{
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.popup{
+    background-color: turquoise;
+    width: 40%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 20%;
+    left: 30%;
+    display: none;
+}
+.popup-input{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    width: 100%;
+    font-size: 20px;
+
+}
+.popup-textarea{
+    padding: 10px;
+    border: none;
+    background: transparent;
+    border: 1px solid black;
+    width: 100%;
+    font-size: 20px;
+    margin: 5px;
+}
+.popup-input::placeholder{
+    color: black;
+    opacity: 0.9;
+}
+.popup-textarea::placeholder{
+    color: black;
+    opacity: 0.9;
+}
+.popup button{
+    background-color: black;
+    color: turquoise;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.popup-input:focus{
+    outline: none;
+}
+.popup-textarea:focus{
+    outline: none;
+}

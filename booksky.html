@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .overlay{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0.7;
+        z-index: 1;
+        display: none;
+    }
+    .popup{
+        position: absolute;
+        width: 50%;
+        background-color: white;
+        color: black;
+        left: 30%;
+        padding: 15px;
+        border-radius: 20px;
+        z-index: 3;
+        display: none;
+    }
+</style>
+
+<body>
+    <button onclick="show()">Show</button>
+    <div class="overlay"></div>
+    <div class="popup">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aperiam voluptates illo nesciunt eveniet tempore. Harum sunt facilis at officia adipisci doloremque, iusto labore distinctio. Et iure laborum recusandae dolorem!</p>
+        <button onclick="cancel()
+        
+        ">cancel</button>
+    </div>
+
+
+    <script>
+        // selecting overlay,popup
+        var lay=document.querySelector(".overlay")
+        var pop=document.querySelector(".popup")
+        function show()
+        {
+            lay.style.display="block"
+            pop.style.display="block"
+        }
+        function cancel()
+        {
+            lay.style.display="none"
+            pop.style.display="none"
+        }
+    </script>
+</body>
+</html>
